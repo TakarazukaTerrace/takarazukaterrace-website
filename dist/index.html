@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+    <script defer src="./eventsnews.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'jri6jrc',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
 
     <title>宝塚TERRACE</title>
 </head>
@@ -12,21 +25,21 @@
 <body>
     <div id="lp-container">
         <div id="topofnav">
-            <img src="../dist/img/wavy-top.png" alt="">
+            <img id="wavyimg" src="../dist/img/wavy-top.png" alt="">
             <!-- top of nav -->
             <div id="top-menu-wrap">
                 <a href="#">
-                    <div class="menu-btn" id="menu-btn-info">
+                    <div class="menu-btn top" id="menu-btn-info">
                         <img src="../dist/img/rabbit.png" alt="">
                         <p class="menu-text-jp">総合案内</p>
                         <p class="menu-text-eng">INFO</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="menu-btn" id="menu-btn-reserve">
-                        <img src="../dist/img/rabbit.png" alt="">
-                        <p class="menu-text-jp">総合案内</p>
-                        <p class="menu-text-eng">INFO</p>
+                    <div class="menu-btn top" id="menu-btn-reserve">
+                        <img src="../dist/img/lettuce.png" alt="">
+                        <p class="menu-text-jp">ご予約</p>
+                        <p class="menu-text-eng">RESERVATION</p>
                     </div>
                 </a>
             </div>
@@ -34,28 +47,31 @@
             <nav>
                 <div class="nav-menu-wrap leftline">
                     <a href="#">
-                        <div class="menu-btn" id="menu-btn-info">
-                            <img src="../dist/img/rabbit.png" alt="">
-                            <p class="menu-text-jp">総合案内</p>
-                            <p class="menu-text-eng">INFO</p>
+                        <div class="menu-btn" id="menu-btn-about">
+                            <img src="../dist/img/strawberry.png" alt="">
+                            <p class="menu-text-jp">宝塚TERRACEに</p>
+                            <p class="menu-text-jp">ついて</p>
+                            <p class="menu-text-eng">ABOUT US</p>
                         </div>
                     </a>
                 </div>
                 <div class="nav-menu-wrap leftline">
                     <a href="#">
-                        <div class="menu-btn" id="menu-btn-info">
-                            <img src="../dist/img/rabbit.png" alt="">
-                            <p class="menu-text-jp">総合案内</p>
-                            <p class="menu-text-eng">INFO</p>
+                        <div class="menu-btn" id="menu-btn-features">
+                            <img src="../dist/img/shiba.png" alt="">
+                            <p class="menu-text-jp">宝塚TERRACEで</p>
+                            <p class="menu-text-jp">できること</p>
+                            <p class="menu-text-eng">FEATURES</p>
                         </div>
                     </a>
                 </div>
                 <div class="nav-menu-wrap bothside-line">
                     <a href="#">
-                        <div class="menu-btn" id="menu-btn-info">
-                            <img src="../dist/img/rabbit.png" alt="">
-                            <p class="menu-text-jp">総合案内</p>
-                            <p class="menu-text-eng">INFO</p>
+                        <div class="menu-btn" id="menu-btn-eventsnews">
+                            <img src="../dist/img/radish.png" alt="">
+                            <p class="menu-text-jp">イベント情報</p>
+                            <p class="menu-text-jp">＆お知らせ</p>
+                            <p class="menu-text-eng">EVENTS&NEWS</p>
                         </div>
                     </a>
                 </div>
@@ -65,36 +81,132 @@
                 </div>
                 <div class="nav-menu-wrap leftline">
                     <a href="#">
-                        <div class="menu-btn" id="menu-btn-info">
-                            <img src="../dist/img/rabbit.png" alt="">
-                            <p class="menu-text-jp">総合案内</p>
-                            <p class="menu-text-eng">INFO</p>
+                        <div class="menu-btn" id="menu-btn-parkmap">
+                            <img src="../dist/img/carrot2.png" alt="">
+                            <p class="menu-text-jp">園内MAP</p>
+                            <p class="menu-text-eng">PARK MAP</p>
                         </div>
                     </a>
                 </div>
                 <div class="nav-menu-wrap leftline">
                     <a href="#">
-                        <div class="menu-btn" id="menu-btn-info">
-                            <img src="../dist/img/rabbit.png" alt="">
-                            <p class="menu-text-jp">総合案内</p>
-                            <p class="menu-text-eng">INFO</p>
+                        <div class="menu-btn" id="menu-btn-access">
+                            <img src="../dist/img/car.png" alt="">
+                            <p class="menu-text-jp">アクセス</p>
+                            <p class="menu-text-eng">ACCESS</p>
                         </div>
                     </a>
                 </div>
                 <div class="nav-menu-wrap bothside-line">
                     <a href="#">
-                        <div class="menu-btn" id="menu-btn-info">
-                            <img src="../dist/img/rabbit.png" alt="">
-                            <p class="menu-text-jp">総合案内</p>
-                            <p class="menu-text-eng">INFO</p>
+                        <div class="menu-btn" id="menu-btn-contactus">
+                            <img src="../dist/img/dove-.png" alt="">
+                            <p class="menu-text-jp">お問い合わせ</p>
+                            <p class="menu-text-eng">CONTACT US</p>
                         </div>
                     </a>
                 </div>
             </nav>
         </div>
 
+
+        <!-- slide  -->
+        <div class="container" data-autoplay="true">
+            <div class="slide"> <img src="../dist/img/slide-img-1.jpg" alt="nature" /></div>
+            <div class="slide">
+                <img src="../dist/img/slide-img-2.jpg" alt="nature" />
+            </div>
+            <div class="slide">
+                <img src="../dist/img/slide-img-3.jpg" alt="nature" />
+            </div>
+            <div class="slide">
+                <img src="../dist/img/slide-img-4.jpg" alt="nature" />
+            </div>
+
+            <button class="prev" onclick="prev()"><img src="../dist/img/whitearrow.png" alt=""></button>
+            <button class="next" onclick="next()"><img src="../dist/img/whitearrow.png" alt=""></button>
+
+
+        </div>
+        <div class="dots_container" id="indicator"></div>
+
+
+        <!-- events & news -->
+        <div class="wavy-top"></div>
+        <div id="eventsnews-container">
+            <div id="eventsnews-titlewrap" class="title-wrap">
+                <h2>EVENTS&NEWS</h2>
+                <p>イベント情報＆お知らせ</p>
+            </div>
+            <div id="eventsnews-wrap"></div>
+            <a id="eventsnews-more-wrap" href="https://takarazukaterrace.blogspot.com/">もっと見る</a>
+
+        </div>
+        <!-- <img src="./img/wavy-lightblue.png" alt="" class="wavy-bottom"> -->
+
+        <!-- info and business calendar -->
+        <div id="info-businesscalendar-container">
+
+            <div class="round-btn-wrap" id="readmebefore">
+                <a href="http://">
+                    <img src="./img/warning-sign.png" alt="">
+                    <p>ご来園前に</p>
+                    <p>お読みください</p>
+                </a>
+            </div>
+
+            <div class="round-btn-wrap" id="businesscalendar">
+                <a href="http://">
+                    <img src="./img/calendar1.png" alt="">
+                    <p>営業日カレンダー</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- features -->
+        <div id="features-container">
+
+            <div id="features-titlewrap" class="title-wrap">
+                <div> <img src="./img/carrot2.png" alt="" id="carrot">
+                    <img src="./img/strawberry.png" alt="" id="strawberry">
+                    <img src="./img/radish.png" alt="" id="radish">
+                    <img src="./img/shiba.png" alt="" id="shibadog">
+                </div>
+
+                <img src="./img/title-features.png" alt="">
+            </div>
+
+
+            <div class="feature-item-wrap">
+                <div class="feature-explanation-wrap">
+                    <div class="feature-num-wrap">
+                        <img src="./img/shiba.png" alt="">
+                        <p>FEATURE</p>
+                        <p>01</p>
+                    </div>
+                    <div class="feature-detail-wrap">
+                        <div class="feature-detail-title-wrap">
+                            <h2>ドッグパーク</h2>
+                            <p>DOG PARK</p>
+                        </div>
+                        <div class="feature-detail-detail-wrap">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Exercitationem obcaecati consequuntur alias nisi nemo labore.</div>
+                        <a class="feature-detail-morebtn" href="http://">詳しくはこちら<img src="./img/whitearrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="feature-item-img-wrap">
+                    <div class="feature-item-img"></div>
+                    <div class="feature-item-img-text-wrap">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 <script src="main.js"></script>
+<script src="keys.js"></script>
 
 </html>

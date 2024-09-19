@@ -1,3 +1,4 @@
+
 // api for events & news
 
 function get_result() {

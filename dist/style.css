@@ -8,6 +8,7 @@
     --orange     : #C86F2D;
     --yellow     : #D7B412;
     --blue       : #4883AC;
+    --navy       : #39505F;
     font-family  : "filicudi-solid", sans-serif;
     font-weight  : 400;
     font-style   : normal;
@@ -494,34 +495,124 @@ button:hover {
     bottom: 30%;
 }
 
+
+
 #features-titlewrap>img {
     height: 150px;
 
 }
 
-.feature-num-wrap img {
-    height: 30px;
-}
+/* features item */
+
 
 .feature-item-wrap {
-    display       : flex;
-    flex-direction: row;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
     background-color: #679018;
 }
+
 .feature-explanation-wrap {
     display       : flex;
     flex-direction: row;
-    width: 50%;
+    width         : 40%;
 }
+
 .feature-num-wrap {
-    display       : flex;
-    flex-direction:column;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    background-color: yellow;
 }
+
+.feature-num-wrap img {
+    width: 3em;
+}
+
+.feature-feature-text {
+    color    : var(--yellow);
+    font-size: 1em;
+}
+
+.feature-feature-num {
+    color    : var(--navy);
+    font-size: 3em;
+}
+
 .feature-detail-wrap {
-    display       : flex;
-    flex-direction:column;
+    display         : flex;
+    flex-direction  : column;
+    background-color: #39505F;
+    margin-left     : .5em;
+}
+
+.feature-detail-title-wrap {
+    background-color: #4883AC;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+border-bottom: 2px black solid;
+}
+
+.feature-detail-title-wrap > h2 {
+    font-family: "maru-maru-gothic-alr-stdn", sans-serif;
+    font-size: 2em;
 }
 
 .feature-detail-morebtn {
     height: 30px;
+}
+
+.feature-detail-morebtn img {
+    height: 30px;
+}
+
+.feature-item-img-wrap {
+    background-color: #9E332B;
+    width           : 30%;
+    display         : flex;
+    justify-content : end;
+    position        : relative;
+}
+
+.feature-item-img {
+    width           : 300px;
+    height          : 300px;
+    border-radius   : 50%;
+    overflow        : hidden;
+    background-color: blue;
+
+}
+
+.feature-item-img img {
+    height: 100%;
+}
+
+.feature-item-img-text-wrap {
+    display         : flex;
+    flex-direction  : row;
+    background-color: #696969;
+
+
+}
+
+.feature-item-img-text-wrap p {
+    -ms-writing-mode: tb-rl;
+    writing-mode    : vertical-rl;
+    background-color: var(--orange);
+    text-align      : center;
+    padding         : .5em .2em;
+
+    position: absolute;
+}
+
+.feature-item-text-right {
+    top  : 0;
+    right: 0;
+}
+
+.feature-item-text-left {
+    top  : 10%;
+    right: 2em;
 }

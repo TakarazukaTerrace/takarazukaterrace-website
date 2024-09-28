@@ -1,3 +1,6 @@
+require('dotenv').config()
+const {BLOGGER_ID,BLOGGER_API_KEY} = process.env
+console.log(BLOGGER_ID,BLOGGER_API_KEY)
 var slide = document.getElementsByClassName("slide");
 var indicator = document.getElementById("indicator");
 var dots = document.getElementsByClassName("dots");

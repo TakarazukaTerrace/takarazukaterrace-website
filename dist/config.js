@@ -1,4 +1,0 @@
-var config = {
- BLOGGER_ID :'3014099394787260339',
- BLOGGER_API_KEY : 'AIzaSyA9IS3Mmaxqxc6yN7dAJsAb6jG3xnmXR0I'
-  }
